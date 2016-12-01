@@ -351,8 +351,7 @@ h3 {
 .block-shift h3 {
     padding-top: 45px;
     padding-bottom: 30px;
- 
-}
+ }
 
 .block-shift p {
     width: 270px;
@@ -427,6 +426,7 @@ input[type="checkbox"] {
     text-transform: uppercase;
     display: inline-block;
     vertical-align: top;
+    box-sizing: content-box;
 }
 
 .options:first-of-type {
@@ -503,8 +503,8 @@ input:checked:disabled + .form-label-chb::before {
     margin: 0 0 18px 0;
     border: 2px solid #ffffff;
     border-radius: 2px;
-    font-size: 0;
     position: relative;
+    color: #ffffff;
 }
 
 .price-controls::after {
@@ -519,24 +519,21 @@ input:checked:disabled + .form-label-chb::before {
 }
 
 .price-controls label {
-    width: 320px;
-    height: 35px;
     display: inline-block;
-    vertical-align: top;
-    font-size: 14px;
-    line-height: 21px;
+    vertical-align: middle;
     cursor: pointer;
 }
 
 label.min-price  {
-    width: 145px;
-    margin: 0 0 0 64px;
-    padding: 7px 0 11px 0;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-left: 60px; 
 }
 
 label.max-price  {
-    width: 109px;
-    padding: 7px 0 10px 0;
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-left: 45px;
 }
 
 .price-controls input {
@@ -575,6 +572,7 @@ label.max-price  {
     border-radius: 50px;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
+    box-sizing: content-box;
 }
 
 .range-toggle-max:hover {
@@ -751,9 +749,8 @@ label.max-price  {
     float: left;
 }
 
-.hotel-head {
+.hotel-text h2 {
     margin: -6px 0 6px 0;
-    font: bold 21px/26px "PT Sans", Arial, sans-serif;
 }
 
 .hotel-word ul {
@@ -798,9 +795,11 @@ label.max-price  {
 .raiting {
     width: 106px;
     min-height: 25px;
-    margin: 0 0 46px 90px;
+    margin-bottom: 46px; 
+   /* margin-left: 90px;*/
     padding: 0;
     background-image: url(../img/icon-star.png);
+    float: right;
 }
 
 .raiting[data-rating="5"] {
